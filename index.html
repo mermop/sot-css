@@ -5,7 +5,97 @@
   <script src="script.js"></script>
 </head>
 <body onload="init();">
-  <h1>The Summer of Tech Zen Garden</h1>
+  <h1>The Summer of Tech CSS Zen Garden</h1>
+  <article>
+    <p>This is a document for you to personalise using CSS. You will be </p>
+  </article>
+  <article>
+    <h2>Selectors</h2>
+    <p>To change the appearance of an HTML element, you must select it with CSS. The basic building blocks are:</p>
+    <ul>
+      <li>
+        <code data-language="css">element { }</code> to select all instances of the element
+        <ul>
+          <li>For example, <code data-language="css">p { color: red; }</code> will make all text in <code data-language="html">&lt;p&gt;</code> elements red.</li>
+        </ul>
+      </li>
+      <li>
+        <code data-language="css">.classname { }</code> to select elements with that class
+        <ul>
+          <li>For example, <code data-language="css">.cats { color: blue; }</code> will make all text in elements with <code data-language="html">class="cats"</code> blue.</li>
+        </ul>
+      </li>
+      <li>
+        <code data-language="css">#id { }</code> to select elements with that ID
+        <ul>
+          <li>
+            For example, <code data-language="css">#friendly { color: yellow; }</code> will make all text in elements with <code data-language="html">id="friendly"</code> yellow.
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>These can then be combined to select more specifically:</p>
+    <ul>
+      <li>
+        Stringing together element names, class names, and IDs <strong>with spaces in between</strong> describes the <strong>nesting</strong> of the elements - like <code data-language="css">#friendly p</code>, or <code data-language="css">ul li</code>, or <code data-language="css">#cats .whiskers</code>.
+        <ul>
+          <li>For example, <code data-language="css">#cats .whiskers</code> will select <code data-language="html">&lt;section id="cats"&gt;&lt;p class="whiskers"&gt;</code>, but won't select <code data-language="html">&lt;section id="dogs"&gt;&lt;p class="whiskers"&gt;</code>.</li>
+        </ul>
+      </li>
+      <li>
+        Stringing together element names, class names, and IDs <strong><em>without</em> spaces in between</strong> describes elements that combine all of the selectors.
+        <ul>
+          <li>For example, <code data-language="css">#cats.whiskers</code> <strong>won't</strong> select <code data-language="html">&lt;section id="cats"&gt;&lt;p class="whiskers"&gt;</code>, but <strong>will</strong> select <code data-language="html">&lt;section id="cats" class="whiskers"&gt;</code>.</li>
+        </ul>
+      </li>
+    </ul>
+    <section class="advanced">
+      <h3>Advanced</h3>
+      <p>There are also more advanced selectors:</p>
+      <ul>
+        <li>
+          Pseudo-classes such as <code data-language="css">:first-child</code>
+          <ul>
+            <li>For example, this allows you to select the first &lt;p&gt; tag from a parent with <code data-language="css">p:first-child</code>.</li>
+            <li>There is a list of standard pseudo classes and more details about each of them <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">here</a>.</li>
+          </ul>
+        </li>
+        <li>
+          Combinators such as <code>&gt;</code>
+        </li>
+        <ul>
+          <li>
+            This allows you to select only direct descendents of an element. For example, <code data-language="css">article&gt;ul</code> would select <code data-language="html">&lt;article&gt;&lt;ul&gt;</code>, but would not select <code data-language="html">&lt;article&gt;&lt;section&gt;&lt;ul&gt;</code>.
+          </li>
+        </ul>
+      </ul>
+    </section>
+    <section class="links">
+      <h3>Links</h3>
+      <ul>
+      <li>Try out this adorable <a href="http://flukeout.github.io/">bento box themed CSS selector game</a>!</li>
+      <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Mozilla Developer Network</a> reference is quite helpful.</li>
+      </ul>
+    </section>
+  </article>
+  <article>
+    <h2>Rules</h2>
+    <p>There are a <em>lot</em> of rules that you can apply using CSS.</p>
+    <ul>
+      <li>
+        The box model: margin, padding, and border
+      </li>
+    </ul>
+    <section class="links">
+      <h3>Links</h3>
+      <ul>
+      <li>Centering is a pain. <a href="http://howtocenterincss.com/">Here is a website to help you with it.</a></li>
+      <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Mozilla Developer Network</a> reference is quite helpful.</li>
+      <li>This is the <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">best guide to Flexbox</a> around.</li>
+      </ul>
+    </section>
+  </article>
+  <h2>Which rules override the others?</h2>
   <footer>
     <a class="style-change-link" href="#styles">Styles</a>
     <a class="style-change-link" href="#alt-styles">Alt-styles</a>
