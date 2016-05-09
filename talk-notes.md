@@ -169,6 +169,9 @@ So here we are. CSS has been around for a long time, but it's only recently that
 
 So basically CSS selects elements in an HTML document and declares how it should look.
 
+
+Which elements to change are stated in a selector. The changes is stated in a declaration. 
+
 Talk about family
 
 Selectors
@@ -178,8 +181,8 @@ Declarations
 
 
 
-
-
+What takes priority in CSS is governed by a principle known as specificity. That's basically just a fancy way of saying 'specificness'. Well, it's the correct way of saying 'specificness'. 'Specificness' is not a word.
+So the lowest priority rule here is that a rule lower down in a document wins any conflicts, all other things being equal. So if you  
 
 
 

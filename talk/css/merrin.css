@@ -1,0 +1,116 @@
+.year {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.year h1 {
+  text-align: left;
+  display: inline-block;
+}
+
+/*.website-of-year {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  display: none;
+}
+
+.present .website-of-year {
+  display: block;
+}
+
+#year-1989 .website-of-year {
+  background-image: url('../images/1989-2.gif');
+}*/
+
+.text-bgcolor.red {
+  background-color: red;
+  color: white;
+}
+
+.text-bgcolor.blue {
+  background-color: blue;
+  color: white;
+}
+
+.text-bgcolor.peachpuff {
+  background-color: peachpuff;
+}
+
+.text-bgcolor.lemonchiffon {
+  background-color: lemonchiffon;
+}
+
+.text-bgcolor.cornflowerblue {
+  background-color: cornflowerblue;
+}
+
+.text-bgcolor.mistyrose {
+  background-color: mistyrose;
+}
+
+.text-bgcolor.tomato {
+  background-color: tomato;
+}
+
+.text-bgcolor.chartreuse {
+  background-color: chartreuse;
+}
+
+.text-bgcolor.saddlebrown {
+  background-color: saddlebrown;
+  color: white;
+}
+
+.text-bgcolor.bisque {
+  background-color: bisque;
+}
+
+.text-bgcolor.blueviolet {
+  background-color: blueviolet;
+}
+
+.text-bgcolor.olivedrab {
+  background-color: olivedrab;
+}
+
+.text-bgcolor.papayawhip {
+  background-color: papayawhip;
+}
+
+.text-bgcolor.thistle {
+  background-color: thistle;
+}
+
+.text-bgcolor.gainsboro {
+  background-color: gainsboro;
+}
+
+
+.highlight-element {
+  background-color: cornflowerblue;
+}
+
+.highlight-class {
+  background-color: thistle;
+}
+
+.highlight-id {
+  background-color: bisque;
+}
+
+.code-example {
+  text-align: left;
+  float: left;
+  width: 45%;
+}
+
+.code-example code {
+  font-size: 0.75em;
+}
+
+.full-width {
+  width: 100%;
+}
