@@ -2,7 +2,7 @@ CSS 101
 
 6pm-7.30pm
 
-talk
+6-6.30 - talk
   - History & background
     - Year by year
   - How it works
@@ -10,59 +10,23 @@ talk
     - Look at Selectors
     - Look at rules
 
+6.30-7.15pm - challenge
+- download the .zip
+- email the CSS back by 7.15
 
-Selector game
-- Like flukeout.github.io but IN REAL LIFE
+7.15-7.30 - looking at submissions
+  - resources
 
-Bring bowls, plates, fruit & vegetables
-Break into groups of enough for each group to have a coach
-<plate class="round big">
-  <fruit class="apple" />
-</plate>
 
-<plate class="square big">
-  <fruit class="orange" />
-</plate>
+7.15-7.30 - regroup
 
-<cheeseboard class="marble">
-  <cheese class="taleggio" />
-  <knife class="cheese small spreader" />
-  <cheese class="cheddar" />
-  <knife class="cheese small" />
-  <cheese class="gouda" />
-  <knife class="cheese small cleaver" />
-  <bunch class="grapes">
-    <fruit class="grape">
-    <fruit class="grape">
-    <fruit class="grape">
-    <fruit class="grape">
-    <fruit class="grape">
-    <fruit class="grape">
-    <fruit class="grape">
-    <fruit class="grape">
-  </bunch>
-  <fruit class="fig dried" />
-</cheeseboard>
 
-<dish class="long square">
-  <cracker class="rice" />
-  <cracker class="rice" />
-  <cracker class="rice" />
-  <cracker class="rice" />
-  <cracker class="rice" />
-  <cracker class="rice" />
-  <cracker class="rice" />
-  <cracker class="rice" />
-  <cracker class="rice" />
-  <cracker class="rice" />
-  <cracker class="rice" />
-  <cracker class="rice" />
-</dish>
+
 - http://www.csszengarden.com/
 - https://medium.com/net-magazine/interview-with-h%C3%A5kon-wium-lie-f3328aeca8ed#.7wb00xc3k
+acid test http://www.howtocreate.co.uk/acid/
 
 
-6.30-7.15pm - challenge
 
 Summer of Tech Zen Garden
 
@@ -75,11 +39,16 @@ At 7:15 we will get back together and have a look at what you've done
 Colours
 https://www.youtube.com/watch?v=HmStJQzclHc
 
+http://www.dejavu.org/ - old browser emulators
+
+http://www.internetlivestats.com/total-number-of-websites/ - total number of websites
 
 History of CSS
 
 1989
   - Web
+  - http://info.cern.ch/hypertext/WWW/TheProject.html
+  - https://www.w3.org/History/1989/proposal.html
 
 1990
   - HTML 1
@@ -88,6 +57,8 @@ History of CSS
   -
 
 1992
+  - Viola https://www.w3.org/History/19921103-hypertext/hypertext/Viola/Review.html
+  - Erwise https://www.w3.org/History/19921103-hypertext/hypertext/Erwise/Review.html
 
 1993
 
@@ -151,9 +122,10 @@ History of CSS
   - Flash
 
 2006
+  - IE9
 
 2007
-  - Apple releases Safari
+  - Apple releases Safari for mobile
   - iPhone released supporting CSS but not Flash - this is the beginning of the end for Flash
   - Netscape Navigator discontinued
 
