@@ -59,8 +59,10 @@ History of CSS
 1992
   - Viola https://www.w3.org/History/19921103-hypertext/hypertext/Viola/Review.html
   - Erwise https://www.w3.org/History/19921103-hypertext/hypertext/Erwise/Review.html
+  - Servers online in 1992 - https://www.w3.org/History/19921103-hypertext/hypertext/DataSources/WWW/Servers.html
 
 1993
+  - http://www.nytimes.com/1993/12/08/business/business-technology-a-free-and-simple-computer-link.html?pagewanted=all&src=pm
 
 1994
   - Image tags approved in HTML

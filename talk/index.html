@@ -1,0 +1,305 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/white.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>CSS 101</h1>
+          <h3>Making the Internet Presentable</h3>
+        </section>
+				<section>
+          <h1>Cascading</h1>
+          <h1>Style</h1>
+          <h1>Sheets</h1>
+        </section>
+        <section>
+          <h1>Confusing</h1>
+          <h1>Style</h1>
+          <h1>Sheets</h1>
+        </section>
+        <section>
+          <h1>1989</h1>
+          <p>Tim Berners-Lee has a great idea</p>
+          <ul>
+          </ul>
+          <p>People using the web: 1</p>
+        </section>
+        <section>
+          <h1>1990</h1>
+          <p>Tim Berners-Lee writes lots of code</p>
+          <ul>
+            <li>HTTP</li>
+            <li>HTML</li>
+            <li>URLs</li>
+          </ul>
+          <p>People using the web: A handful of physicists in Europe</p>
+        </section>
+        <section>
+          <h1>1991</h1>
+          <p>The first browsers</p>
+          <ul>
+            <li>Line mode browser</li>
+            <li>WorldWideWeb</li>
+          </ul>
+          <p>People using the web: European physicists and friends</p>
+        </section>
+        <section>
+          <h1>1992</h1>
+          <p>New browsers</p>
+          <ul>
+            <li>Viola</li>
+            <li>Erwise</li>
+          </ul>
+          <p>People using the web: Quite a few physicists across the world, various other enthusiasts</p>
+        </section>
+        <section>
+          <h1>1993</h1>
+          <p>WWW technology made freely available</p>
+          <p>New browsers</p>
+          <ul>
+            <li>Mosaic</li>
+          </ul>
+          <p>People using the web: A reasonable number of students, academics, and enthusiasts, not all of whom are even physicists</p>
+        </section>
+        <section>
+          <h1>1994</h1>
+          <p>Håkon Lie has a great idea</p>
+          <p>The W3C decides to exist</p>
+          <p>Marc Andreessen loves pictures</p>
+          <p>New browsers</p>
+          <ul>
+            <li>Netscape Navigator 1.0</li>
+          </ul>
+          <p>People using the web: Academics, Pizza Hut, Megadeth</p>
+        </section>
+        <section>
+          <h1>1995</h1>
+          <p>The W3C has some meetings</p>
+          <p>New browsers</p>
+          <ul>
+            <li>Internet Explorer 1.0 and 2.0</li>
+          </ul>
+          <p>People using the web: All sorts of weird people</p>
+        </section>
+        <section>
+          <h1>1996</h1>
+          <p>The W3C made a recommendation</p>
+          <p>New browsers</p>
+          <ul>
+            <li>Internet Explorer 3 - first partial support for CSS!</li>
+          </ul>
+          <p>People using the web: Anyone who wants to</p>
+        </section>
+        <section>
+          <h1>1997</h1>
+          <p>The W3C starts working on CSS 2</p>
+          <p>Internet Explorer and Netscape Navigator start supporting CSS</p>
+        </section>
+        <section>
+          <h1>1998</h1>
+          <p>The W3C releases CSS 2.0</p>
+        </section>
+        <section>
+          <h1>1999</h1>
+          <p>The W3C starts working on CSS3...</p>
+          <p>...but no browser even fully supports CSS1</p>
+        </section>
+        <section>
+          <h1>2000</h1>
+          <p>Internet Explorer 5.0 for the Mac actually supports CSS1!</p>
+          <p>So does Navigator 6!</p>
+          <p></p>
+        </section>
+        <section>
+          <h1>2001 - 2005</h1>
+          <p>2001 - Internet Explorer 6.0 is shipped with Windows XP - doesn't support much more</p>
+          <p>2003 - Apple releases Safari, using Webkit</p>
+          <p>2004 - Mozilla releases Firefox</p>
+          <p>2004 - W3C releases CSS 2.1 specification</p>
+          <p>2005 - Safari becomes the first browser to pass the CSS 2.1 specification</p>
+        </section>
+        <section>
+          <h1>2006-2010</h1>
+          <p>2006 - Internet Explorer 7 is just as bad as Internet Explorer 6</p>
+          <p>2007 - iPhone supports CSS better than Internet Explorer does</p>
+          <p>2008 - Chrome passes CSS 2.1 from its release</p>
+          <p>2009 - Internet Explorer 8 finally compliant with CSS 2 - 21 years after the recommendation</p>
+        </section>
+        <section>
+          <h1>2011-2016</h1>
+          <p>2011 - Internet Explorer 9 is fine, but everyone still uses 7 and 8</p>
+          <p>2012 - ... or actually, mostly Chrome and Firefox by this point</p>
+          <p>2015 - Internet Explorer deprecated</p>
+          <p>2016 - THE GOLDEN AGE OF CSS</p>
+        </section>
+        <section>
+          <h1>So what even is this newfangled CSS thing?</h1>
+        </section>
+        <section>
+          <h1>Selectors</h1>
+          <h1>Declarations</h1>
+        </section>
+        <section>
+          <h1>Selectors</h1>
+          <section>
+            <h3 class="fragment">Selector</h3>
+            <h3 class="fragment">{</h3>
+            <h3 class="fragment">declarations</h3>
+            <h3 class="fragment">}</h3>
+          </section>
+          <section>
+            <h2>Element level selectors</h2>
+            <code><b>body</b> {
+              outline: red;
+            }</code>
+            <code><b>h2</b> {
+              outline: red;
+            }</code>
+            <code><b>div</b> {
+              outline: red;
+            }</code>
+            <code><b>section</b> {
+              outline: red;
+            }</code>
+          </section>
+          <section>
+            <h2>Class level selectors</h2>
+            <code><b>.whisker</b> {
+              outline: red;
+            }</code>
+          </section>
+          <section>
+            <h2>ID level selectors</h2>
+            <code><b>#cat-face</b> {
+            }</code>
+          </section>
+          <section>
+            <h2>Pseudo-class selectors</h2>
+            <code><b>.whisker:first-of-type</b> {
+            }</code>
+            <code><b>.whisker:hover</b> {
+            }</code>
+          </section>
+          <section>
+            <h2>Attribute selectors</h2>
+            <code><b>.whisker[disabled=true]</b> {
+            }</code>
+          </section>
+          <section>
+            <h2>Descendant selectors</h2>
+            <code><b>.pat .mary</b> {
+            }</code>
+          </section>
+          <section>
+            <h2>Child selectors</h2>
+            <code><b>.pat > .mary</b> {
+            }</code>
+          </section>
+          <section>
+            <h2>Adjacent selectors</h2>
+            <code><b>.fred + .mary</b> {
+            }</code>
+          </section>
+          <section>
+            <h2>Combinations</h2>
+            <code>.whisker.grey</code>
+            <br>
+            <code>cat#george</code>
+            <br>
+            <code>cat.friendly</code>
+          </section>
+        </section>
+        <section>
+          <h1>Declarations</h1>
+          <h3 class="fragment">Property name</h3>
+          <h3 class="fragment">:</h3>
+          <h3 class="fragment">Property value</h3>
+          <h3 class="fragment">;</h3>
+          <code class="fragment">outline: red;</code>
+        </section>
+        <section>
+          <code>
+            <span class="fragment">.whisker</span><span class="fragment">{</span>
+              <span class="fragment">color</span><span class="fragment">:</span><span class="fragment">red</span><span class="fragment">;</span>
+            <span class="fragment">}</span>
+          </code>
+        </section>
+        <section>
+          <h1>Everything is a box</h1>
+          <h3>Content</h3>
+          <h3>Padding</h3>
+          <h3>Border</h3>
+          <h3>Margin</h3>
+        </section>
+        <section>
+          <h1>Everything has a display</h1>
+          <h3>Block</h3>
+          <h3>Inline</h3>
+          <h3>Inline-block</h3>
+          <h3>None</h3>
+          <h3>(a bunch of table related stuff)</h3>
+        </section>
+        <section>
+          <h1>Positioning</h1>
+          <h3>Static - the default for everything</h3>
+          <h3>Relative</h3>
+          <h3>Absolute</h3>
+          <h3>Fixed</h3>
+        </section>
+        <section>
+          <h1>Floats</h1>
+          <h3>float: left;</h3>
+          <h3>float: right;</h3>
+        </section>
+        <section>
+          <h1>Units of measurement</h1>
+          <h3>px</h3>
+          <h3>em</h3>
+          <h3>rem</h3>
+          <h3>vh</h3>
+          <h3>vw</h3>
+        </section>
+        <section>
+          <h1>Fonts</h1>
+          <h3>font-family: 'Gill Sans';</h3>
+          <h3>font-family: 'Gill Sans', sans-serif;</h3>
+          <h3>font-family: 'Gill Sans', 'Helvetica', sans-serif;</h3>
+        </section>
+        <section>
+          <h1>CSS3</h1>
+          <h3>@font-face { font-family: 'Gill Sans'; src="http://wherever.com/gillsans.otf"}</h3>
+          <h3>body { font-family: 'Gill Sans'; }</h3>
+        </section>
+        <section>
+          <h1>Colours</h1>
+          <h3>rgb(0, 0, 0)</h3>
+          <h3>rgb(0, 0, 0, 0.5)</h3>
+          <h3>#000000</h3>
+        </section>
+        <section>
+          <h1>CSS Zen Garden</h1>
+        </section>
+        <section>
+          <h1>Cool fun challenge</h1>
+          <ol>
+            <li>Go out and have some candy for a bit</li>
+            <li>Find someone else to work with</li>
+            <li>Come back in and sit in every second row from the start (that is, <code>rows:nth-of-type(2n-1)</code>)</li>
+            <li>Download the zip file from here: (url)</li>
+            <li>Make the page look good - ask for lots of help</li>
+            <li>Email it to me at merrin.macleod@gmail.com by 7.30 - fabulous prizes</li>
+        </section>
+			</div>
+		</div>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+        history: true,
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+      });
+		</script>
+	</body>
+</html>
