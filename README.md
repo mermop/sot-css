@@ -20,6 +20,10 @@ CSS 101
 
 7.15-7.30 - regroup
 
+http://oldweb.today/
+
+- defines layout of HTML elements
+
 
 
 - http://www.csszengarden.com/

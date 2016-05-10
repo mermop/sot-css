@@ -1,5 +1,6 @@
 .year {
   background-color: rgba(255, 255, 255, 0.8);
+  color: black;
 }
 
 .year h1 {
@@ -107,10 +108,25 @@
   width: 45%;
 }
 
-.code-example code {
+.code-example code, code.code-example {
   font-size: 0.75em;
 }
 
 .full-width {
   width: 100%;
+}
+
+
+
+.box-margin, .box-border, .box-padding, .box-content {
+  outline: 1px solid red;
+  padding: 0.5em !important;
+}
+
+.box-margin p, .box-border p, .box-padding p, .box-content p {
+  display: inline-block;
+}
+
+.sparkly {
+  
 }
