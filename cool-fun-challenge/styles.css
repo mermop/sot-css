@@ -1,0 +1,24 @@
+body {
+  background-color: #BADA55;
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+main {
+  background-color: lemonchiffon;
+  max-width: 800px;
+  margin: 0 auto; /*this is one way to centre things*/
+  padding: 2vh 2vw;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 5px dotted peachpuff;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.intro {
+  font-size: 1.5em;
+}

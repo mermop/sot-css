@@ -157,7 +157,10 @@
 	          <p>2008 - Chrome passes CSS 2.1 from its release</p>
 	          <p>2009 - Internet Explorer 8 finally compliant with CSS 2 - 21 years after the recommendation</p>
 	        </section>
-					<section data-background="images/ie-7-acid-test.png">
+					<section data-background="images/ie-7-acid-test.png" data-background-size="contain">
+
+					</section>
+					<section data-background="images/ie-8-acid-test-3.png" data-background-size="contain">
 
 					</section>
 				</section>
@@ -176,10 +179,182 @@
 	          <h1>CSS defines how HTML looks</h1>
 					</section>
 					<section data-background="images/no-css-wikipedia.png" data-background-size="contain">
-
+						<!-- put in the html -->
+						<pre class="long-css">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;mul&quot; dir=&quot;ltr&quot;&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;title&gt;Wikipedia&lt;/title&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1,user-scalable=yes&quot;&gt;
+	&lt;link rel=&quot;apple-touch-icon&quot; href=&quot;/static/apple-touch/wikipedia.png&quot;&gt; &lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon/wikipedia.ico&quot;&gt; &lt;link rel=&quot;license&quot; href=&quot;//creativecommons.org/licenses/by-sa/3.0/&quot;&gt;
+&lt;/head&gt;
+&lt;body id=&quot;www-wikipedia-org&quot;&gt;
+	&lt;h1 class=&quot;central-textlogo&quot; style=&quot;font-variant: small-caps&quot; alt=&quot;WikipediA&quot; title=&quot;Wikipedia&quot;&gt;
+		&lt;img src=&quot;portal/wikipedia.org/assets/img/Wikipedia_wordmark.png&quot; srcset=&quot;portal/wikipedia.org/assets/img/Wikipedia_wordmark@1.5x.png 1.5x, portal/wikipedia.org/assets/img/Wikipedia_wordmark@2x.png 2x&quot; width=&quot;174&quot; height=&quot;30&quot; alt=&quot;WikipediA&quot; title=&quot;Wikipedia&quot;&gt;
+	&lt;/h1&gt;
+	&lt;div class=&quot;central-featured&quot; data-el-section=&quot;primary links&quot;&gt;
+		&lt;div class=&quot;central-featured-logo-wrapper&quot;&gt;
+			&lt;img class=&quot;central-featured-logo&quot; src=&quot;portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png&quot; srcset=&quot;portal/wikipedia.org/assets/img/Wikipedia-logo-v2@1.5x.png 1.5x, portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png 2x&quot; width=&quot;200&quot; alt=&quot;Wikipedia Logo&quot;&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;central-featured-lang lang1&quot; lang=&quot;en&quot;&gt;
+			&lt;a href=&quot;//en.wikipedia.org/&quot; title=&quot;English &mdash; Wikipedia &mdash; The Free Encyclopedia&quot; class=&quot;link-box&quot;&gt;
+				&lt;strong&gt;English&lt;/strong&gt;
+				&lt;br&gt;
+				&lt;em&gt;The Free Encyclopedia&lt;/em&gt;
+				&lt;br&gt;
+				&lt;small&gt;5&amp;nbsp;077&amp;nbsp;000+ articles&lt;/small&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+						</pre>
 					</section>
 					<section data-background="images/css-wikipedia.png" data-background-size="contain">
+						<!-- put in the css -->
+						<code class="fragment">
+							<pre class="long-css">
+.sprite-bookshelf_icons {
+    background-image: url(portal/wikipedia.org/assets/img/sprite-bookshelf_icons.png?18d8b7f58860758a154b3f1b0d329784d0f4235a)
+}
 
+@media (-webkit-min-device-pixel-ratio:1.5),
+(min-resolution:144dpi) {
+    .sprite-bookshelf_icons {
+        background-image: url(portal/wikipedia.org/assets/img/sprite-bookshelf_icons@1.5x.png?4c76354a49b48f4363d77e539b88cdfe921c4464);
+        background-size: 40px 52px
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi) {
+    .sprite-bookshelf_icons {
+        background-image: url(portal/wikipedia.org/assets/img/sprite-bookshelf_icons@2x.png?f549ec63823d7156616e5a7c6b7e9ec610e7718e);
+        background-size: 40px 52px
+    }
+}
+
+.sprite-bookshelf_icons-caretDown {
+    background-position: 0 0;
+    width: 12px;
+    height: 12px
+}
+
+.sprite-bookshelf_icons-Bookshelf {
+    background-position: 0 -12px;
+    width: 40px;
+    height: 20px
+}
+
+.sprite-bookshelf_icons-search-icon {
+    background-position: 0 -32px;
+    width: 20px;
+    height: 20px
+}
+
+.sprite-project-logos {
+    background-image: url(portal/wikipedia.org/assets/img/sprite-project-logos.png?9afc01c5efe0a8fb6512c776955e2ad3eb48fbca)
+}
+
+@media (-webkit-min-device-pixel-ratio:1.5),
+(min-resolution:144dpi) {
+    .sprite-project-logos {
+        background-image: url(portal/wikipedia.org/assets/img/sprite-project-logos@1.5x.png?b10ac92127437fbd9ad1ece6037cd5a8cd29e23f);
+        background-size: 88px 493px
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi) {
+    .sprite-project-logos {
+        background-image: url(portal/wikipedia.org/assets/img/sprite-project-logos@2x.png?fdb87e9e2a190a394445a985875a65c09ea1ca88);
+        background-size: 88px 493px
+    }
+}
+
+.sprite-project-logos-Wikinews-logo_sister {
+    background-position: 0 0;
+    width: 47px;
+    height: 26px
+}
+
+.sprite-project-logos-Wikidata-logo_sister {
+    background-position: 0 -26px;
+    width: 47px;
+    height: 27px
+}
+
+.sprite-project-logos-Wikiversity-logo_sister {
+    background-position: 0 -52px;
+    width: 35px;
+    height: 28px
+}
+
+.sprite-project-logos-wikimedia-button {
+    background-position: 0 -80px;
+    width: 88px;
+    height: 31px
+}
+
+.sprite-project-logos-Wikivoyage-logo_sister {
+    background-position: 0 -111px;
+    width: 35px;
+    height: 35px
+}
+
+.sprite-project-logos-Wikibooks-logo_sister {
+    background-position: 0 -146px;
+    width: 35px;
+    height: 35px
+}
+
+.sprite-project-logos-Meta-logo_sister {
+    background-position: 0 -181px;
+    width: 35px;
+    height: 35px
+}
+
+.sprite-project-logos-Wiktionary-logo_sister {
+    background-position: 0 -216px;
+    width: 35px;
+    height: 35px
+}
+
+.sprite-project-logos-MediaWiki-logo_sister {
+    background-position: 0 -251px;
+    width: 47px;
+    height: 36px
+}
+
+.sprite-project-logos-Wikisource-logo_sister {
+    background-position: 0 -287px;
+    width: 35px;
+    height: 37px
+}
+
+.sprite-project-logos-Wikimedia-logo-grey {
+    background-position: 0 -323px;
+    width: 40px;
+    height: 41px
+}
+
+.sprite-project-logos-Wikispecies-logo_sister {
+    background-position: 0 -364px;
+    width: 35px;
+    height: 41px
+}
+
+.sprite-project-logos-Wikiquote-logo_sister {
+    background-position: 0 -405px;
+    width: 35px;
+    height: 42px
+}
+
+.sprite-project-logos-Commons-logo_sister {
+    background-position: 0 -446px;
+    width: 35px;
+    height: 47px
+}
+							</pre>
+						</code>
 					</section>
         </section>
 				<section>
@@ -355,8 +530,7 @@
         </section>
         <section>
           <h1>Everything is a box</h1>
-					<section>
-						<div class="box-margin">
+						<div class="box-margin fragment">
 							<p>Margin</p>
 							<div class="box-border">
 								<p>Border</p>
@@ -368,12 +542,6 @@
 								</div>
 							</div>
 						</div>
-					</section>
-					<section>
-						<div class="box-content" style="width: 20%; border: 10px dotted pink;">
-							xyz
-						</div>
-					</section>
         </section>
 				<section>
 					<h1>Everything has a display</h1>
@@ -387,8 +555,6 @@
 						<span style="outline: 1px solid red; display: inline-block;">Inline-block</span>
 						<span style="outline: 1px solid red; display: inline-block;">Inline-block</span>
 					</h3>
-					<!-- <h3 style="outline: 1px dotted red;">None</h3>
-					<h3>(a bunch of table related stuff)</h3> -->
 				</section>
 				<!-- <section>
 					<h1>Positioning</h1>
@@ -402,16 +568,39 @@
           <h3>float: left;</h3>
           <h3>float: right;</h3>
         </section> -->
-        <section>
-          <h1>Units of measurement</h1>
-					<h3>px</h3>
-          <h3>%</h3>
-          <h3>em</h3>
-          <h3>rem</h3>
-          <h3>vh</h3>
-          <h3>vw</h3>
-        </section>
-        <section>
+        <!-- <section>
+					<h1>Units of measurement</h1>
+					<section>
+						<h3>px</h3>
+						<div class="fragment" style="width: 100px; height: 100px; outline: 1px solid red; display: inline-block;"></div>
+						<div class="fragment" style="width: 50px; height: 50px; outline: 1px solid red; display: inline-block;">
+							<div style="width: 100px; height: 100px; outline: 1px solid blue;" class="fragment">
+							</div>
+						</div>
+					</section>
+					<section>
+						<h3>%</h3>
+						<div class="fragment" style="width: 50%; height: 200px; outline: 1px solid red; display: inline-block;">
+							<div class="fragment" style="width: 50%; height: 50%; outline: 1px solid blue; display: inline-block;">
+								<div class="fragment" style="width: 50%; height: 50%; outline: 1px solid blueviolet; display: inline-block;">
+									<div class="fragment" style="width: 20%; height: 50%; outline: 1px solid blueviolet; display: inline-block;"></div>
+									<div class="fragment" style="width: 20%; height: 50%; outline: 1px solid blueviolet; display: inline-block;"></div>
+									<div class="fragment" style="width: 20%; height: 50%; outline: 1px solid blueviolet; display: inline-block;"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h3>em</h3>
+					</section>
+					<section>
+						<h3>rem</h3>
+					</section>
+					<section>
+						<h3>vh & vw</h3>
+					</section>
+        </section> -->
+        <!-- <section>
           <h1>Fonts</h1>
           <h3>font-family: 'Gill Sans';</h3>
           <h3>font-family: 'Gill Sans', sans-serif;</h3>
@@ -421,14 +610,14 @@
           <h1>CSS3</h1>
           <h3>@font-face { font-family: 'Gill Sans'; src="http://wherever.com/gillsans.otf"}</h3>
           <h3>body { font-family: 'Gill Sans'; }</h3>
-        </section>
-        <section>
+        </section> -->
+        <!-- <section>
           <h1>Colours</h1>
           <h3>rgb(0, 0, 0)</h3>
           <h3>rgb(0, 0, 0, 0.5)</h3>
           <h3>#000000</h3>
-        </section>
-        <section>
+        </section> -->
+        <!-- <section>
           <h1>CSS Zen Garden</h1>
         </section>
 				<section>
@@ -439,7 +628,7 @@
               <span class="fragment">color</span><span class="fragment">:</span><span class="fragment">red</span><span class="fragment">;</span>
             <span class="fragment">}</span>
           </code>
-        </section>
+        </section> -->
         <section>
           <h1>Cool fun challenge</h1>
           <ol>
@@ -447,8 +636,9 @@
             <li>Find someone else to work with</li>
             <li>Come back in and sit in every second row from the start (that is, <code>rows:nth-of-type(2n-1)</code>)</li>
             <li>Download the zip file from here: (url)</li>
-            <li>Make the page look good - ask for lots of help</li>
-            <li>Email it to me at merrin.macleod@gmail.com by 7.30 - fabulous prizes</li>
+            <li>Write ten rules</li>
+						<li>Ask for lots of help</li>
+            <li>Email it to me at merrin.macleod@gmail.com by 7.30 - fabulous (ish) prizes</li>
         </section>
 			</div>
 		</div>

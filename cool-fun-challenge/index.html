@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+  <title>Cool fun CSS challenge YEAH</title>
+  <link rel="stylesheet" href="styles.css" charset="utf-8">
+</head>
+<body>
+  <main>
+    <h1>The Summer of Tech CSS Zen Garden</h1>
+    <article class="intro">
+      <p>This is a document for you to personalise using CSS. Your challenge is to:</p>
+        <ol>
+          <li>come up with a great team name, then</li>
+          <li>write ten CSS rules that alter this document in keeping with the theme of your team name.</li>
+        </ol>
+      <p>You can add classes and IDs to the HTML, but keep all the content the same.</p>
+      <p>You should then zip up the files and send them to merrin.macleod@gmail.com by 7.30.</p>
+      <p>This challenge is inspired by the <a href="http://www.csszengarden.com">CSS Zen Garden</a>.</p>
+    </article>
+    <article id="selectors">
+      <h2>Selectors</h2>
+      <p>To change the appearance of an HTML element, you must select it with CSS. The basic building blocks are:</p>
+      <ul>
+        <li>
+          <code data-language="css">element { }</code> to select all instances of the element
+          <ul>
+            <li>For example, <code data-language="css">p { color: red; }</code> will make all text in <code data-language="html">&lt;p&gt;</code> elements red.</li>
+          </ul>
+        </li>
+        <li>
+          <code data-language="css">.classname { }</code> to select elements with that class
+          <ul>
+            <li>For example, <code data-language="css">.cats { color: blue; }</code> will make all text in elements with <code data-language="html">class="cats"</code> blue.</li>
+          </ul>
+        </li>
+        <li>
+          <code data-language="css">#id { }</code> to select elements with that ID
+          <ul>
+            <li>
+              For example, <code data-language="css">#friendly { color: yellow; }</code> will make all text in elements with <code data-language="html">id="friendly"</code> yellow.
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>These can then be combined to select more specifically:</p>
+      <ul>
+        <li>
+          Stringing together element names, class names, and IDs <strong>with spaces in between</strong> describes the <strong>nesting</strong> of the elements - like <code data-language="css">#friendly p</code>, or <code data-language="css">ul li</code>, or <code data-language="css">#cats .whiskers</code>.
+          <ul>
+            <li>For example, <code data-language="css">#cats .whiskers</code> will select <code data-language="html">&lt;section id="cats"&gt;&lt;p class="whiskers"&gt;</code>, but won't select <code data-language="html">&lt;section id="dogs"&gt;&lt;p class="whiskers"&gt;</code>.</li>
+          </ul>
+        </li>
+        <li>
+          Stringing together element names, class names, and IDs <strong><em>without</em> spaces in between</strong> describes elements that combine all of the selectors.
+          <ul>
+            <li>For example, <code data-language="css">#cats.whiskers</code> <strong>won't</strong> select <code data-language="html">&lt;section id="cats"&gt;&lt;p class="whiskers"&gt;</code>, but <strong>will</strong> select <code data-language="html">&lt;section id="cats" class="whiskers"&gt;</code>.</li>
+          </ul>
+        </li>
+      </ul>
+      <section class="links">
+        <h3>Links</h3>
+        <ul>
+        <li>Try out this adorable <a href="http://flukeout.github.io/">bento box themed CSS selector game</a>!</li>
+        <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Mozilla Developer Network</a> reference is quite helpful.</li>
+        </ul>
+      </section>
+    </article>
+    <article id="rules">
+      <h2>Rules</h2>
+      <p>There are a <em>lot</em> of rules that you can apply using CSS. Here are some places you can find out more:</p>
+      <ul>
+        <li>
+          The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">Mozilla Developer Network</a> reference is quite helpful.
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/CSS/#css">The W3 spec of CSS</a> - do you love reading specifications documents? Today is your lucky day!
+        </li>
+      </ul>
+      <section class="links">
+        <h3>Links</h3>
+        <ul>
+        <li>Centering is a pain. <a href="http://howtocenterincss.com/">Here is a website to help you with it.</a></li>
+        <li>This is the <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">best guide to Flexbox</a> around.</li>
+        </ul>
+      </section>
+    </article>
+    <article id="hot-tips">
+      <h2>Hot tips</h2>
+      <p>Here are some hot CSS tips for a fun time doing CSS things.</p>
+      <ul>
+        <li>
+          The developer tools are really helpful in any browser. In most browsers, you can right-click on something and select 'inspect element' to find out what CSS rules are applied to it.
+        </li>
+        <li>
+          Be friendly to your pairing partner.
+        </li>
+        <li>
+          Try things out in different browsers. Make the browser window thinner to see what it might look like on your phone.
+        </li>
+        <li>
+          Don't use !important. It is so rude.
+        </li>
+        <li>
+          You can do colours in three ways - hex codes, RGB() and RGBA(). The A is for alpha and it lets you do some transparency stuff. Neato.
+        </li>
+      </ul>
+    </article>
+  </main>
+</body>
+</html>

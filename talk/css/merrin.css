@@ -127,6 +127,10 @@
   display: inline-block;
 }
 
-.sparkly {
-  
+.long-css {
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: scroll;
+  max-height: 100vh;
+  font-size: 0.75em;
+  text-align: center;
 }
